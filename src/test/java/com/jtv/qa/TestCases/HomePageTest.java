@@ -26,6 +26,10 @@ public class HomePageTest extends BaseClass {
 		h.goToCreateAccountPage();
 	}
 	
-	
+	@AfterMethod
+	public void teardown()
+	{
+		driver.quit();
+	}
 
 }
