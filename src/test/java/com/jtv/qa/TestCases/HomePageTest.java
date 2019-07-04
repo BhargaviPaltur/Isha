@@ -8,10 +8,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.jtv.qa.baseClass.BaseClass;
+import com.jtv.qa.pages.CreateAccountPage;
 import com.jtv.qa.pages.HomePage;
 
 public class HomePageTest extends BaseClass {
 	HomePage h;
+	CreateAccountPage c;
 	
 	@BeforeMethod
 	public void setUp()
@@ -23,7 +25,7 @@ public class HomePageTest extends BaseClass {
 	@Test
 	public void goToCreatePage()
 	{
-		h.goToCreateAccountPage();
+	   c = h.goToCreateAccountPage();
 	}
 	
 	@AfterMethod

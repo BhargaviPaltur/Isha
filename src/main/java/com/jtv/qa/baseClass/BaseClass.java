@@ -27,12 +27,7 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(TestUtil.imp_wait,TimeUnit.SECONDS);
 		driver.get("https://www.jtv.com");
-		
-		;
-		
-		
-		
-		
+			
 	}
 
 }

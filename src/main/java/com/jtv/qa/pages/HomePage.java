@@ -27,7 +27,7 @@ public class HomePage extends BaseClass {
 		System.out.println(s);
 	}
 	
-	public void goToCreateAccountPage()
+	public CreateAccountPage goToCreateAccountPage()
 	{
 		try {
 		int x= (w.getLocation().getX());
@@ -41,6 +41,7 @@ public class HomePage extends BaseClass {
 		{
 			e.printStackTrace();
 		}
+		return new CreateAccountPage();
 		
 	}
 }
